@@ -1,0 +1,18 @@
+The __name__ variable in Python is a special variable that stores the name of the current module. When a Python script is executed, Python automatically sets the __name__ variable:
+
+If the Python script is being run directly (i.e., it's the entry point of the program), then __name__ is set to "__main__".
+If the Python script is being imported as a module into another script, then __name__ is set to the name of the module.
+The __name__ == "__main__" idiom is often used to create executable scripts that can also be imported and used as modules. By using this idiom, you can include code in your script that will only run when the script is executed directly, but not when it's imported as a module into another script.
+
+For example:
+
+# my_script.py
+
+def main():
+    print("This is the main function.")
+
+if __name__ == "__main__":
+    # This code will only run if my_script.py is executed directly
+    main()
+
+In this example, when my_script.py is executed directly (python my_script.py), the main() function will be called and "This is the main function." will be printed. However, if my_script.py is imported as a module into another script, the main() function will not be automatically executed. This allows the script to be both importable and executable.
