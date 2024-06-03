@@ -36,6 +36,7 @@ The repository is organized into subfolders, each focusing on a specific topic o
 - `17 PDFs and Spreadsheets`: Handling PDFs and spreadsheets using Python.
 - `18 Emails with Python`: Sending and receiving emails using Python.
 - `19 Zipping and Unzipping Files`: Working with zip files in Python.
+- `20 Python Problems and Solutions`: Practice Python Problems and Solutions.
 
 ## Getting Started
 
